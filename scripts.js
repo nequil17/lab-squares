@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-var btn = document.createElement("BUTTON");        
+var btn = document.createElement("button");        
 var t = document.createTextNode("CLICK ME"); 
 var counter = 0      
 // var boxNum = [i > 0]
@@ -22,9 +22,9 @@ box.addEventListener('click', function(){
     box.style.backgroundColor = randomColor();
     
     function randomColor() {
-        var randomRed = Math.floor(Math.random() * 350);
-        var randomGreen = Math.floor(Math.random() * 350);
-        var randomBlue = Math.floor(Math.random() * 350);
+        var randomRed = Math.floor(Math.random() * 250);
+        var randomGreen = Math.floor(Math.random() * 250);
+        var randomBlue = Math.floor(Math.random() * 250);
         var randomColor = "rgb("+randomRed+","+randomGreen+","+randomBlue+")";
 
     return randomColor;
