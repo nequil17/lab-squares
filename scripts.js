@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
             box.innerText = '';
         });
         box.addEventListener('dblclick', function() {
-            if (box.id % 2===0) {
+            nextSquare = box.nextSibling;
+            lastSquare = box.previousSibling;
+            if (box.id % 2 === 0 && nextSquare !== null)  {
                 divBox = box.nextSibling;
                 divBox.remove();
             } else if (box.id % 2 == 1) {
@@ -40,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
         });
+    
+
     });
 
     function randomColor() {
