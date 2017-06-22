@@ -29,6 +29,15 @@ document.addEventListener("DOMContentLoaded", function() {
             box.innerText = '';
         });
         box.addEventListener('dblclick', function() {
+            if (box.id % 2===0) {
+                divBox = box.nextSibling;
+                divBox.remove();
+            } else if (box.id % 2 == 1) {
+                divBox = box.previousSibling;
+                divBox.remove();
+            } else if (NaN) {
+                alert("Element does not exist");
+            }
 
         });
     });

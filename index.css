@@ -5,4 +5,10 @@ button {
 .divBox {
     float: left;
     margin: 10px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.counter {
+    float: center;
 }
