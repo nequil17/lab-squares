@@ -33,11 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
 
-        box.addEventListener ("dblclick", function(){
-            console.log(box.previousSibling);
-            if (box.id % 2 == 0 && box.nextSibling !== null){
+        box.addEventListener ("dblclick", function() {
+            if (box.id % 2 == 0 && box.nextSibling !== null) {
                 box.nextSibling.remove();    
-            } else if (box.id % 2 == 1 && box.previousSibling !== button){
+            } else if (box.id % 2 == 1 && box.previousSibling !== null) {
                 box.previousSibling.remove();
             } else {
                 alert('Element does not exist');

@@ -6,5 +6,7 @@ button {
     float: left;
     margin: 10px;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 50px;
+    width: 75px;
+    height: 75px;
 }
